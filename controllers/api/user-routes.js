@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, Post, Comment } = require('../../models');
 
 const bcrypt = require('bcrypt');
 
@@ -26,7 +26,23 @@ router.get('/:id', (req,res) => {
         where: {
             id: req.params.id
         },
-        attributes: { exclude: ['password']}
+        attributes: { 
+            exclude: ['password']
+        },
+        include: [
+            {
+                model: Post,
+                attributes: ['id', 'title', 'post_url', 'created_at']
+            },
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'created_at'],
+                include: {
+                    model: Post,
+                    attributes: ['title']
+                }
+            }
+        ]
     })
     .then(dbUserData => {
         if(!dbUserData){
