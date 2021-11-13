@@ -5,16 +5,33 @@ const path = require('path');
 const express = require('express');
 const routes = require('./controllers');
 
+const sequelize = require("./config/connection");
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+
+
 // add handlebars
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({ });
 
 
+//set up Express.js session
+const session = require('express-session');
+//connect the session to Sequelize database
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const sess ={
+    secret: 'it is not a secret',
+    cookie: {},
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize
+    })
+};
+app.use(session(sess));
 
-const app = express();
-const PORT = process.env.PORT || 3001;
 
-const sequelize = require("./config/connection");
 
 
 
