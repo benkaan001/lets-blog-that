@@ -106,6 +106,7 @@ router.post('/login', (req,res) => {
         }
 
         req.session.save(() => {
+
             //declare session variables
             req.session.user_id = dbUserData.user_id;
             req.session.username = dbUserData.username;
@@ -116,6 +117,19 @@ router.post('/login', (req,res) => {
         
     });
 
+
+});
+
+router.post('/logout', (req,res) => {
+
+    if(req.session.loggedIn){
+        req.session.destroy(() => {
+            res.status(204).end();
+        });
+    }
+    else{
+        res.status(404).end();
+    }
 
 });
 
@@ -164,5 +178,7 @@ router.delete('/:id', (req,res) => {
 
 
 });
+
+
 
 module.exports = router;
