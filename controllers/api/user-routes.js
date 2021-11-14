@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 
 // GET /api /users
 
@@ -108,7 +108,7 @@ router.post('/login', (req,res) => {
         req.session.save(() => {
 
             //declare session variables
-            req.session.user_id = dbUserData.user_id;
+            req.session.user_id = dbUserData.id;
             req.session.username = dbUserData.username;
             req.session.loggedIn = true;
 
