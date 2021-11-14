@@ -17,12 +17,15 @@ async function signupFormHandler(event) {
         }); 
         // console.log(response);
         if(response.ok){
-            console.log('success');
+            console.log(`Success! Your account ${username} has been created!`);
+            document.location.replace('/dashboard/');
         }else{
             alert(response.statusText);
         }
     }
 }
+
+
 
 async function loginFormHandler(event){
     event.preventDefault();
@@ -41,7 +44,7 @@ async function loginFormHandler(event){
         });
 
         if(response.ok){
-            document.location.replace('/dashboard');
+            document.location.replace('/dashboard/');
         }else{
             alert(response.statusText);
         }
