@@ -48,7 +48,9 @@ router.get('/', (req, res) => {
         // console.log(dbPostData[0]);
         const posts = dbPostData.map(post => post.get({ plain: true }));
         // res.render('homepage', dbPostData[0].get({ plain: true }));
-        res.render('homepage', { posts });
+        res.render('homepage', { 
+          posts,
+        loggedIn: req.session.loggedIn });
       })
       .catch(err => {
         console.log(err);
@@ -101,7 +103,7 @@ router.get('/', (req, res) => {
 
       // pass data to template
       res.render('single-post', {post,
-      loggedIn: req.session.loggedIn});
+      loggedIn: req.session});
     })
     .catch(err => {
       console.log(err);
