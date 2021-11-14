@@ -14,7 +14,10 @@ Post.init(
         },
         title: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            validate: {
+                leng:[2]
+            }
         },
         post_url: {
             type: DataTypes.STRING,
