@@ -1,5 +1,7 @@
 
-<h1 align="center">Let's Blog That! featuring Model-View-Controller(MVC)</h1>
+<h1 align="center">Model-View-Controller(MVC)</h1>
+
+<h2 align="center"> Let's Blog That!</h2>
   
 <p align="center">
     <img src="https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white"/>
