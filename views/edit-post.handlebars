@@ -13,15 +13,6 @@
       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
     </div>
 
-
-    <div class="post-content">
-      <label for="post-content">Content</label>
-      <textarea class="entry-field" id="post-content" name="post-content">{{post.content}}</textarea>
-
-    </div>
-
-
-
     {{!-- <button type="submit">Save post</button> --}}
     <button type="submit">Update Post</button>
     <button type="button" class="delete-post-btn">Delete post</button>

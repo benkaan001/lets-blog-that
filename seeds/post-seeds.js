@@ -17,7 +17,7 @@ const postdata = [
     user_id: 3
   },
   {
-    title: 'I can not believe 2021 is almost over! ',
+    title: 'I cannot believe 2021 is almost over! ',
     post_url: 'http://youtube.com',
     user_id: 4
   },
