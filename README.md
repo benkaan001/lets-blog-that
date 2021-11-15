@@ -48,26 +48,26 @@
 
   To connect to the MySQL shell, run the following command on your terminal and enter user credentials for MySQL:
 
-  `<mysql -u root -p>`
+  `mysql -u root -p`
 
 
   To create the schema from the MySQL shell, then, run:
 
-  `<source db/schema.sql>`
+  `source db/schema.sql`
 
 
   To exit mySQL, run: 
 
-  `<exit>`
+  `exit`
 
   Then, seed the database with the following command:
 
-  `<npm run seeds>`
+  `npm run seeds`
 
 
   Lastly, initate the server with:
 
-  `<npm start>`
+  `npm start`
 
 
   To disconnect the server, press <command+C>
