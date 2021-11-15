@@ -17,9 +17,10 @@
       </h1>
       {{!-- add login link --}}
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
         <a href="/" class="navbar-brand">home</a>
         {{#if loggedIn}}
-        <a href ="/dashboard" class="navbar-brand">your dashboard</a>
+        <a href ="/dashboard" class="navbar-brand">dashboard</a>
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
         <a href="/login" class="navbar-brand">login</a>
