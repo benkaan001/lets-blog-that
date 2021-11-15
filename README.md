@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" />
     <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white">
     <img src="https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE"/>
-    <img src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg" />
+    
 </p>
 
   ## Table of Contents
@@ -27,7 +27,7 @@
 
   ## Description
   
-  The purpose of this project is to build the fundemental back end architecture of an e-commmerce application. Sequelize has been utilized to build the necessary server configuration to interact with a MySQL database.
+  The purpose of this project is to build a full stack blogging application following the Model-View-Controller architecture. 
 
 
 
@@ -66,10 +66,6 @@
   Lastly, initate the server with:
 
   `<npm start>`
-
-  Or, with recommended <nodemon> package:
-
-  `<nodemon server.js>`
 
 
   To disconnect the server, press <command+C>
