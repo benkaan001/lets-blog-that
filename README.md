@@ -1,4 +1,3 @@
-
 <h1 align="center">Model-View-Controller(MVC)</h1>
 
 <h2 align="center"> Let's Blog That!</h2>
@@ -16,88 +15,78 @@
     
 </p>
 
-  ## Table of Contents
+## Table of Contents
 
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Email](#email)
-  * [GitHub](#GitHub)
-  * [License](#license)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Email](#email)
+- [GitHub](#GitHub)
+- [License](#license)
 
-  ## Description
-  
-  The purpose of this project is to build a full stack blogging application following the Model-View-Controller architecture. 
+## Description
 
+The purpose of this project is to build a full stack blogging application following the Model-View-Controller architecture.
 
+## Installation
 
-  ## Installation
+Use the following url to clone the repository:
 
-  Use the following url to clone the repository:
+`git clone https://github.com/benkaan001/lets-blog-that`
 
-  `git clone https://github.com/benkaan001/lets-blog-that`
+`npm install` to install all the production and development dependencies highlighted in `package.json` file.
 
+## Usage
 
-  `npm install` to install all the production and development dependencies highlighted in `package.json` file.
+In the root of the application, create a `.env` file and add the following variables:
 
+- ###### `DB_NAME= <the name of your database>`
 
+- ###### `DB_USER= <mySQL username> i.e. 'root'`
 
-  ## Usage
+- ###### ` DB_PW='<mySQL password>'`
+
+- ###### `SESSION_SECRET='yourSessionSecret'`
 
   To connect to the MySQL shell, run the following command on your terminal and enter user credentials for MySQL:
 
   `mysql -u root -p`
 
-
   To create the schema from the MySQL shell, then, run:
 
   `source db/schema.sql`
 
-
-  To exit mySQL, run: 
+  To exit mySQL, run:
 
   `exit`
-
-  Then, seed the database with the following command:
-
-  `npm run seeds`
-
 
   Lastly, initate the server with:
 
   `npm start`
 
-
   To disconnect the server, press <command+C>
 
- 
-
   ## Contributing
-  
+
   Contributions are welcome!
-  
 
   ## Tests
 
-
-  Check out the deployed application on 
+  Check out the deployed application on
   [heroku](https://lit-cove-65977.herokuapp.com)
- 
 
+  ![demo gif](https://github.com/benkaan001/lets-blog-that/blob/main/assets/lets_blog_that.gif)
 
   ## Email
 
   For questions and feedback, please contact me via [my email](mailto:benkaan001@gmail.com) or [my GitHub](https://www.github.com/benkaan001)
-  
 
   ## GitHub
 
   :octocat: [Ben Kaan](https://www.github.com/benkaan001)
-  
 
   ## License
 
-  
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
