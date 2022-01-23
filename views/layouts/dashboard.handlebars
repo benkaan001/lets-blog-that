@@ -3,11 +3,9 @@
   <head>
     <meta charset='utf-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>Let's Blog That</title>
-    <link rel='preconnect' href='https://fonts.googleapis.com' />
-    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <title>Let's Blog Blog</title>
     <link
-      href='https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap'
+      href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap'
       rel='stylesheet'
     />
     <link rel='stylesheet' href='/css/style.css' />
@@ -15,10 +13,9 @@
 
   <body class='flex-column min-100-vh'>
     <nav class='navbar'>
-      <ul>
+      <ul class='flex-row'>
         <li class='li-inline nav-item'><a href='/'>Home</a></li>
         <li class='li-inline nav-item'><a href='/dashboard'>Dashboard</a></li>
-        <li class='li-inline nav-item'><a href='/login'>Login</a></li>
         <li class='li-inline nav-item'><a
             href='#'
             id='logout-link'
@@ -26,17 +23,18 @@
       </ul>
     </nav>
     <header class='hero'>
-      <h1 class='app-title'><a href='/'>Let's Blog That</a></h1>
+      <h1 class='app-title'><a href='/dashboard'>Your Dashboard</a></h1>
     </header>
 
     <main class='col-auto'>
       {{{body}}}
     </main>
 
-    <footer class='flex-row justify-center'>
-      &copy; Thanks for visiting and Happy Coding!
+    <footer class='footer flex-row justify-center'>
+      <a href='/dashboard/new'>➕ New Post</a>
     </footer>
   </body>
 
+  <script src='/js/logout.js'></script>
+
 </html>
-<script src='/js/logout.js'></script>
